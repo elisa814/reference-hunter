@@ -702,7 +702,7 @@ export default function Hunter({ project, onBack }) {
       ? attachments.map(a => a.name).join(', ')
       : null
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('https://tiny-union-cf64anthropic-proxy.eli-587.workers.dev/', {
         method:'POST',
         headers:{ 'Content-Type':'application/json' },
         body: JSON.stringify({
